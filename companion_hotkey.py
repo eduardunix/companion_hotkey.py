@@ -5,38 +5,34 @@ def fetch_data_from_api_1():
     url = "http://127.0.0.1:8000/api/location/2/0/6/press"
     response = requests.post(url)
     if response.status_code == 200:
-        print("Data from API 1 fetched successfully")
-        data = response.json()
+        print("Comando enviado com sucesso")
     else:
-        print(f"Status code: {response.status_code}")
+        print(f"Failed to fetch data from API 1. Status code: {response.status_code}")
 
 def fetch_data_from_api_2():
     url = "http://127.0.0.1:8000/api/location/2/1/6/press"
     response = requests.post(url)
     if response.status_code == 200:
-        print("Data from API 2 fetched successfully")
-        data = response.json()
+        print("Comando enviado com sucesso")
     else:
-        print(f"Status code: {response.status_code}")
+        print(f"Failed to fetch data from API 2. Status code: {response.status_code}")
 
 def fetch_data_from_api_3():
     url = "http://127.0.0.1:8000/api/location/2/2/6/press"
     response = requests.post(url)
     if response.status_code == 200:
-        print("Data from API 2 fetched successfully")
-        data = response.json()
+        print("Comando enviado com sucesso")
     else:
-        print(f"Status code: {response.status_code}")
+        print(f"Failed to fetch data from API 2. Status code: {response.status_code}")
 
 
 def fetch_data_from_api_4():
     url = "http://127.0.0.1:8000/api/location/2/3/6/press"
     response = requests.post(url)
     if response.status_code == 200:
-        print("Data from API 2 fetched successfully")
-        data = response.json()
+        print("Comando enviado com sucesso")
     else:
-        print(f"Status code: {response.status_code}")
+        print(f"Failed to fetch data from API 2. Status code: {response.status_code}")
 
 def on_key_event(event):
     if event.name == 'f13':
